@@ -41,6 +41,7 @@
 ### 실행 결과
 ![실습과제5 실행결과]
 
+<img width="979" height="512" alt="5" src="https://github.com/user-attachments/assets/8285b0a9-0c8a-4ec0-884e-adb6012dbbf7" />
 
-<img width="979" height="512" alt="2" src="https://github.com/user-attachments/assets/57be7c1c-baf4-4900-a51d-55e73f2d6d07" />
+
 
