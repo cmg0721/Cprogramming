@@ -53,7 +53,7 @@
    * 주소 변경이 가능한 포인터 변수 `ptr`(`int* ptr = a;`)을 별도로 선언한 후 `*ptr++` 형태로 접근하여 해결합니다.
 
 ### 실행결과
-]<img width="382" height="85" alt="3" src="https://github.com/user-attachments/assets/94b9056f-5fdf-4557-b4ad-f0cf82dd3af2" />
+<img width="382" height="85" alt="3" src="https://github.com/user-attachments/assets/94b9056f-5fdf-4557-b4ad-f0cf82dd3af2" />
 
 
 ---
