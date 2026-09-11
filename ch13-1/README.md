@@ -37,8 +37,7 @@
 기존 코드의 배열 표현(`grade[i]`, `&grade[i]`)을 포인터 주소 및 간접참조 표현(`grade + i`, `*(grade + i)`)으로 수정하였습니다.
 
 ### 실행결과
-![실습과제 2 실행결과]
-<img width="381" height="126" alt="KakaoTalk_20260911_224905449" src="https://github.com/user-attachments/assets/375065e6-cba5-468c-ad0f-dadbbf54cd5b" />
+![실습과제 2 실행결과]<img width="381" height="126" alt="KakaoTalk_20260911_224905449" src="https://github.com/user-attachments/assets/375065e6-cba5-468c-ad0f-dadbbf54cd5b" />
 
 
 ---
@@ -54,8 +53,7 @@
    * 주소 변경이 가능한 포인터 변수 `ptr`(`int* ptr = a;`)을 별도로 선언한 후 `*ptr++` 형태로 접근하여 해결합니다.
 
 ### 실행결과
-![실습과제 3 실행결과]
-<img width="382" height="85" alt="3" src="https://github.com/user-attachments/assets/94b9056f-5fdf-4557-b4ad-f0cf82dd3af2" />
+![실습과제 3 실행결과]<img width="382" height="85" alt="3" src="https://github.com/user-attachments/assets/94b9056f-5fdf-4557-b4ad-f0cf82dd3af2" />
 
 
 ---
@@ -66,8 +64,7 @@
 5개의 실수를 입력받아 배열에 저장하고, 포인터 변수 `ptr`을 증감 연산자(`ptr++`)로 이동시키며 각 요소의 값을 2씩 증가시킨 후 출력합니다.
 
 ### 실행결과
-![실습과제 4 실행결과]
-<img width="380" height="223" alt="4" src="https://github.com/user-attachments/assets/5c5d05b0-9a6c-4c86-909a-57ed3cc437bb" />
+![실습과제 4 실행결과]<img width="380" height="223" alt="4" src="https://github.com/user-attachments/assets/5c5d05b0-9a6c-4c86-909a-57ed3cc437bb" />
 
 
 ---
@@ -78,5 +75,4 @@
 포인터 변수 `ptr`의 주소 값을 직접 변경하지 않고 덧셈 연산(`ptr + i`)을 사용하여 값을 2씩 증가시키며, 5가지 배열 접근 방식으로 결과를 확인합니다.
 
 ### 실행결과
-![실습과제 5 실행결과]
-<img width="381" height="446" alt="5" src="https://github.com/user-attachments/assets/824031c4-4f66-41b4-9c94-0cdd603eaf69" />
+![실습과제 5 실행결과]<img width="381" height="446" alt="5" src="https://github.com/user-attachments/assets/824031c4-4f66-41b4-9c94-0cdd603eaf69" />
