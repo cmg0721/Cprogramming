@@ -1,0 +1,30 @@
+// **************************************************
+// 제목: 실습과제 5 (포인터 배열 사전순 첫 번째 문자열 탐색)
+// 날짜: 2026년 9월 18일
+// 작성자 : 2600195 채민기
+// **************************************************
+
+#define _CRT_SECURE_NO_WARNINGS // 보안오류방지
+#pragma warning(disable:6031)   // 리턴값관련 경고 방지
+
+#include <stdio.h>
+
+int main(void)
+{
+    char* fruits[] = { "apple", "blueberry", "orange", "melon" };
+    int n = sizeof(fruits) / sizeof(fruits[0]);
+    int min_index = 0;
+    int i;
+
+    for (i = 1; i < n; i++)
+    {
+        if (fruits[i][0] < fruits[min_index][0])
+        {
+            min_index = i;
+        }
+    }
+
+    printf("사전에서 가장 앞에 나오는 문자열: %s\n", fruits[min_index]);
+
+    return 0;
+}
