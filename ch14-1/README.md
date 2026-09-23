@@ -33,7 +33,7 @@
 - 이를 해결하기 위해 매개변수 자료형을 포인터 `int*`로 선언하고, `main`에서 `number`의 주소(`&number`)를 전달하도록 작성했습니다.
 
 ### [실행 결과 (Ctrl+F5 실행)]
-![ch14-2 실행결과]<img width="385" height="99" alt="image" src="https://github.com/user-attachments/assets/16d10408-7a39-46fc-9e94-68c7fa5a30e4" />
+<img width="385" height="99" alt="image" src="https://github.com/user-attachments/assets/16d10408-7a39-46fc-9e94-68c7fa5a30e4" />
 
 
 ---
@@ -44,7 +44,7 @@
 - Call-by-value 방식을 유지하되, `add2` 함수 내부에서 2를 증가시킨 값을 반환(`return`)하고, `main` 함수에서 `number = add2(number);` 형태로 받아 처리하도록 작성했습니다.
 
 ### [실행 결과 (Ctrl+F5 실행)]
-![ch14-3 실행결과]<img width="385" height="88" alt="image" src="https://github.com/user-attachments/assets/501ff26f-7cf0-4a85-ba8b-92c7a4a80d01" />
+<img width="385" height="88" alt="image" src="https://github.com/user-attachments/assets/501ff26f-7cf0-4a85-ba8b-92c7a4a80d01" />
 
 
 ---
@@ -56,7 +56,7 @@
 - 임시 변수 `tmp`에 `x`의 값(10)을 저장한 후, `x`에는 `y`값(20), `y`에는 `z`값(30), `z`에는 `tmp`값(10)을 순서대로 대입하여 교환합니다.
 
 ### [실행 결과 (Ctrl+F5 실행)]
-![ch14-4 실행결과]<img width="390" height="177" alt="image" src="https://github.com/user-attachments/assets/a4450d60-b61f-45b4-86bb-721b869c7542" />
+<img width="390" height="177" alt="image" src="https://github.com/user-attachments/assets/a4450d60-b61f-45b4-86bb-721b869c7542" />
 
 
 ---
@@ -69,5 +69,5 @@
 - **결론**: 원본 변수의 값을 직접 변경해야 하므로 **Call-by-reference (`MultiplyByReference`)** 방식이 적절합니다.
 
 ### [실행 결과 (Ctrl+F5 실행)]
-![ch14-5 실행결과]<img width="336" height="220" alt="image" src="https://github.com/user-attachments/assets/6a34ab4e-994d-4222-93ed-042f93b67ba0" />
+<img width="336" height="220" alt="image" src="https://github.com/user-attachments/assets/6a34ab4e-994d-4222-93ed-042f93b67ba0" />
 
