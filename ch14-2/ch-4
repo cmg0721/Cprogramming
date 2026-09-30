@@ -1,0 +1,30 @@
+// **********************************************
+// 제 목 : 실습과제 4 - 정수부 소수부 리턴 함수 (VS)
+// 날 짜 : 2026년 9월 30일
+// 작성자 : 2600195 채민기
+// **********************************************
+#define _CRT_SECURE_NO_WARNINGS
+#pragma warning(disable:6031)
+
+#include <stdio.h>
+
+void split_real(double num, int* int_part, double* frac_part)
+{
+    *int_part = (int)num;
+    *frac_part = num - *int_part;
+}
+
+int main(void)
+{
+    double input, frac_res;
+    int int_res;
+
+    printf("실수를 입력하시오 : ");
+    scanf("%lf", &input);
+
+    split_real(input, &int_res, &frac_res);
+
+    printf("정수부 : %d\n", int_res);
+    printf("소수부 : %.5lf\n", frac_res); // 출력 형식의 일관성을 위해 고정 소수점으로 보정
+    return 0;
+}
