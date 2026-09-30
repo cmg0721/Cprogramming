@@ -1,0 +1,34 @@
+// **********************************************
+// 제 목 : 실습과제 2 - 최대값 구하는 프로그램 (VS)
+// 날 짜 : 2026년 9월 30일
+// 작성자 : 2600195 채민기
+// **********************************************
+#define _CRT_SECURE_NO_WARNINGS
+#pragma warning(disable:6031)
+
+#include <stdio.h>
+
+int get_max(int* array, int n)
+{
+    int max = array[0]; // 주소가 아닌 첫 번째 '원소의 값'으로 올바르게 초기화
+    for (int i = 1; i < n; i++)
+    {
+        if (array[i] > max) 
+        {
+            max = array[i];
+        }
+    }
+    return max;
+}
+
+int main(void)
+{
+    int grade[5]; // 배열 크기 [5]를 정확히 선언
+    printf("정수 5개를 입력 하시오.\n");
+    for (int i = 0; i < 5; i++)
+    {
+        scanf("%d", &grade[i]);
+    }
+    printf("최대값은 %d입니다.\n", get_max(grade, 5));
+    return 0;
+}
