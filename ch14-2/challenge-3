@@ -1,0 +1,30 @@
+// **********************************************
+// 제 목 : 도전과제 3 - 홀짝 양방향 배열 배치 (VS)
+// 날 짜 : 2026년 9월 30일
+// 작성자 : 2600195 채민기
+// **********************************************
+#define _CRT_SECURE_NO_WARNINGS
+#pragma warning(disable:6031)
+
+#include <stdio.h>
+
+int main(void)
+{
+    int arr[10]; // 원본 입력값들이 균형있게 들어갈 최종 타깃 배열 명시
+    int input;
+    int left = 0, right = 9;
+
+    printf("총 10개의 숫자 입력\n");
+    for (int i = 0; i < 10; i++)
+    {
+        printf("입력: ");
+        scanf("%d", &input);
+        if (input % 2 != 0) arr[left++] = input;
+        else arr[right--] = input;
+    }
+
+    printf("배열 요소의 출력 : ");
+    for (int i = 0; i < 10; i++) printf("%d ", arr[i]);
+    printf("\n");
+    return 0;
+}
