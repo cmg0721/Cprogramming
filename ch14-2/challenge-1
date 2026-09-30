@@ -1,0 +1,55 @@
+// **********************************************
+// 제 목 : 도전과제 1 - 홀수와 짝수 구분 출력 (VS)
+// 날 짜 : 2026년 9월 30일
+// 작성자 : 2600195 채민기
+// **********************************************
+#define _CRT_SECURE_NO_WARNINGS
+#pragma warning(disable:6031)
+
+#include <stdio.h>
+
+void ShowOdds(const int* arr, int len)
+{
+    int first = 1;
+    printf("홀수 출력 : ");
+    for (int i = 0; i < len; i++)
+    {
+        if (arr[i] % 2 != 0)
+        {
+            if (!first) printf(", ");
+            printf("%d", arr[i]);
+            first = 0;
+        }
+    }
+    printf("\n");
+}
+
+void ShowEvens(const int* arr, int len)
+{
+    int first = 1;
+    printf("짝수 출력 : ");
+    for (int i = 0; i < len; i++)
+    {
+        if (arr[i] % 2 == 0)
+        {
+            if (!first) printf(", ");
+            printf("%d", arr[i]);
+            first = 0;
+        }
+    }
+    printf("\n");
+}
+
+int main(void)
+{
+    int arr[10]; // 크기 [10] 선언 누락 수정
+    printf("총 10개의 숫자 입력\n");
+    for (int i = 0; i < 10; i++)
+    {
+        printf("입력: ");
+        scanf("%d", &arr[i]);
+    }
+    ShowOdds(arr, 10);
+    ShowEvens(arr, 10);
+    return 0;
+}
