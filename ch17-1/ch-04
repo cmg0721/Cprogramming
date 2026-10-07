@@ -1,0 +1,43 @@
+// **********************************************
+// 제 목 : 교재 368페이지 문제 17-1 (이중 포인터 변수의 활용)
+// 날 짜 : 2026년 10월 7일
+// 작성자 : 2600195 채민기
+// **********************************************
+#define _CRT_SECURE_NO_WARNINGS
+#pragma warning(disable:6031)
+
+#include <stdio.h>
+
+void MaxAndMin(int* arr, int size, int** pMax, int** pMin);
+
+int main(void)
+{
+    int arr[5] = {3, 5, 1, 9, 2};
+    int* maxPtr = NULL;
+    int* minPtr = NULL;
+    
+    MaxAndMin(arr, 5, &maxPtr, &minPtr);
+    
+    printf("가장 큰 값: %d\n", *maxPtr);
+    printf("가장 작은 값: %d\n", *minPtr);
+    
+    return 0;
+}
+
+void MaxAndMin(int* arr, int size, int** pMax, int** pMin)
+{
+    int* max = &arr[0];
+    int* min = &arr[0];
+    
+    for (int i = 1; i < size; i++) {
+        if (arr[i] > *max) {
+            max = &arr[i];
+        }
+        if (arr[i] < *min) {
+            min = &arr[i];
+        }
+    }
+    
+    *pMax = max;
+    *pMin = min;
+}
