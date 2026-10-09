@@ -1,0 +1,55 @@
+// **********************************************
+// 제 목 : 도전문제 1 - 2차원 배열 90도 회전 프로그램
+// 날 짜 : 2026년 10월 10일
+// 작성자 : 2600195 채민기
+// **********************************************
+#define _CRT_SECURE_NO_WARNINGS // 보안오류방지
+#pragma warning(disable:6031)   // 리턴값관련 경고 방지
+#include <stdio.h>
+
+void printArray(int arr[4][4]) {
+    for (int i = 0; i < 4; i++) {
+        for (int j = 0; j < 4; j++) {
+            printf("%2d ", arr[i][j]);
+        }
+        printf("\n");
+    }
+    printf("\n");
+}
+
+void rotate90(int src[4][4], int dest[4][4]) {
+    for (int i = 0; i < 4; i++) {
+        for (int j = 0; j < 4; j++) {
+            dest[j][3 - i] = src[i][j];
+        }
+    }
+}
+
+int main(void) {
+    int arr1[4][4] = {
+        {1, 2, 3, 4},
+        {5, 6, 7, 8},
+        {9, 10, 11, 12},
+        {13, 14, 15, 16}
+    };
+    int arr2[4][4] = { 0 };
+    int arr3[4][4] = { 0 };
+    int arr4[4][4] = { 0 };
+
+    printf("원래 배열:\n");
+    printArray(arr1);
+
+    rotate90(arr1, arr2);
+    printf("오른쪽으로 90도 회전:\n");
+    printArray(arr2);
+
+    rotate90(arr2, arr3);
+    printf("오른쪽으로 180도 회전:\n");
+    printArray(arr3);
+
+    rotate90(arr3, arr4);
+    printf("오른쪽으로 270도 회전:\n");
+    printArray(arr4);
+
+    return 0;
+}
