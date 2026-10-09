@@ -1,0 +1,47 @@
+// **********************************************
+// 제 목 : 도전문제 2 - n x n 달팽이 배열 출력 프로그램
+// 날 짜 : 2026년 10월 10일
+// 작성자 : 2600195 채민기
+// **********************************************
+#define _CRT_SECURE_NO_WARNINGS // 보안오류방지
+#pragma warning(disable:6031)   // 리턴값관련 경고 방지
+#include <stdio.h>
+
+int main(void) {
+    int n;
+    int arr[100][100] = { 0 };
+
+    printf("숫자를 입력하시오 : ");
+    scanf("%d", &n);
+
+    int value = 1;
+    int row = 0, col = -1;
+    int direction = 1;
+    int steps = n;
+
+    while (steps > 0) {
+        for (int i = 0; i < steps; i++) {
+            col += direction;
+            arr[row][col] = value++;
+        }
+        
+        steps--;
+        if (steps <= 0) break;
+
+        for (int i = 0; i < steps; i++) {
+            row += direction;
+            arr[row][col] = value++;
+        }
+
+        direction *= -1;
+    }
+
+    for (int i = 0; i < n; i++) {
+        for (int j = 0; j < n; j++) {
+            printf("%3d ", arr[i][j]);
+        }
+        printf("\n");
+    }
+
+    return 0;
+}
