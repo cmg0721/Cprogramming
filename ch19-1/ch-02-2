@@ -1,0 +1,23 @@
+// **********************************************
+// 제 목 : 실습과제2-2 - void 포인터 매개변수 예제
+// 날 짜 : 2026년 10월 10일
+// 작성자 : 2600195 채민기
+// **********************************************
+#define _CRT_SECURE_NO_WARNINGS // 보안오류방지
+#pragma warning(disable:6031)   // 리턴값관련 경고 방지
+#include <stdio.h>
+
+void printValue(void* ptr, char type) {
+    if (type == 'i')
+        printf("정수: %d\n", *(int*)ptr);
+    else if (type == 'd')
+        printf("실수: %f\n", *(double*)ptr);
+}
+
+int main(void) {
+    int num = 10;
+    double dnum = 3.14;
+    printValue(&num, 'i');
+    printValue(&dnum, 'd');
+    return 0;
+}
